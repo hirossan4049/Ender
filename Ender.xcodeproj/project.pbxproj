@@ -11,6 +11,10 @@
 		009D0F0428459C160018572D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009D0F0328459C160018572D /* ViewController.swift */; };
 		009D0F0628459C180018572D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 009D0F0528459C180018572D /* Assets.xcassets */; };
 		009D0F0928459C180018572D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 009D0F0728459C180018572D /* Main.storyboard */; };
+		009D0F1128459F240018572D /* TransparentWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009D0F1028459F240018572D /* TransparentWindow.swift */; };
+		009D0F1328459FE10018572D /* Widget.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 009D0F1228459FE10018572D /* Widget.storyboard */; };
+		009D0F152845A0FC0018572D /* WidgetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009D0F142845A0FC0018572D /* WidgetViewController.swift */; };
+		009D0F182845A7F70018572D /* Magnet in Frameworks */ = {isa = PBXBuildFile; productRef = 009D0F172845A7F70018572D /* Magnet */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +24,9 @@
 		009D0F0528459C180018572D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		009D0F0828459C180018572D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		009D0F0A28459C180018572D /* Ender.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Ender.entitlements; sourceTree = "<group>"; };
+		009D0F1028459F240018572D /* TransparentWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransparentWindow.swift; sourceTree = "<group>"; };
+		009D0F1228459FE10018572D /* Widget.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Widget.storyboard; sourceTree = "<group>"; };
+		009D0F142845A0FC0018572D /* WidgetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				009D0F182845A7F70018572D /* Magnet in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,6 +65,9 @@
 				009D0F0528459C180018572D /* Assets.xcassets */,
 				009D0F0728459C180018572D /* Main.storyboard */,
 				009D0F0A28459C180018572D /* Ender.entitlements */,
+				009D0F1028459F240018572D /* TransparentWindow.swift */,
+				009D0F1228459FE10018572D /* Widget.storyboard */,
+				009D0F142845A0FC0018572D /* WidgetViewController.swift */,
 			);
 			path = Ender;
 			sourceTree = "<group>";
@@ -77,6 +88,9 @@
 			dependencies = (
 			);
 			name = Ender;
+			packageProductDependencies = (
+				009D0F172845A7F70018572D /* Magnet */,
+			);
 			productName = Ender;
 			productReference = 009D0EFE28459C160018572D /* Ender.app */;
 			productType = "com.apple.product-type.application";
@@ -105,6 +119,9 @@
 				Base,
 			);
 			mainGroup = 009D0EF528459C160018572D;
+			packageReferences = (
+				009D0F162845A7F70018572D /* XCRemoteSwiftPackageReference "Magnet" */,
+			);
 			productRefGroup = 009D0EFF28459C160018572D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -121,6 +138,7 @@
 			files = (
 				009D0F0628459C180018572D /* Assets.xcassets in Resources */,
 				009D0F0928459C180018572D /* Main.storyboard in Resources */,
+				009D0F1328459FE10018572D /* Widget.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,6 +149,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				009D0F152845A0FC0018572D /* WidgetViewController.swift in Sources */,
+				009D0F1128459F240018572D /* TransparentWindow.swift in Sources */,
 				009D0F0428459C160018572D /* ViewController.swift in Sources */,
 				009D0F0228459C160018572D /* AppDelegate.swift in Sources */,
 			);
@@ -339,6 +359,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		009D0F162845A7F70018572D /* XCRemoteSwiftPackageReference "Magnet" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Clipy/Magnet";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		009D0F172845A7F70018572D /* Magnet */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 009D0F162845A7F70018572D /* XCRemoteSwiftPackageReference "Magnet" */;
+			productName = Magnet;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 009D0EF628459C160018572D /* Project object */;
 }
